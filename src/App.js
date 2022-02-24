@@ -13,7 +13,6 @@ function App() {
     validate: (values) => {
       let errors = {};
       if (!values.email) errors.email = 'Field Required';
-     // if ()error.email = 'Should Be An Email';
       if (!values.password) errors.password = 'Field Required';
      
       else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
